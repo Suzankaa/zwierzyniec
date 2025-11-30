@@ -1,0 +1,143 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zwierzyniec</name>
+    </assembly>
+    <members>
+        <member name="T:Zwierzyniec.Controllers.AnimalsController">
+            <summary>
+            Endpointy dla zwierzat z danymi w pamieci.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.AnimalsController.AddAnimal(Zwierzyniec.Models.Input.AnimalAdd)">
+            <summary>
+            Dodaje nowe zwierze.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.AnimalsController.EditAnimal(Zwierzyniec.Models.Input.AnimalEdit)">
+            <summary>
+            Aktualizuje istniejace zwierze po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.AnimalsController.DeleteAnimal(System.Int32)">
+            <summary>
+            Usuwa zwierze po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.AnimalsController.FilterAnimals(System.String[])">
+            <summary>
+            Filtruje zwierzeta po tagach (nazwa, opis, gatunek, status).
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.AnimalsController.GetAnimalById(System.Int32)">
+            <summary>
+            Pobiera pojedyncze zwierze po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.AnimalsController.GetAnimals">
+            <summary>
+            Zwraca liste wszystkich zwierzat.
+            </summary>
+        </member>
+        <member name="T:Zwierzyniec.Controllers.OrderController">
+            <summary>
+            Endpointy zamowien z danymi w pamieci.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.OrderController.CreateOrder(Zwierzyniec.Models.Input.OrderAdd)">
+            <summary>
+            Tworzy nowe zamowienie.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.OrderController.GetOrderById(System.Int32)">
+            <summary>
+            Pobiera pojedyncze zamowienie po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.OrderController.CancelOrder(System.Int32)">
+            <summary>
+            Anuluje zamowienie po Id (ustawia status cancelled).
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.OrderController.GetOrdersByUserId(System.Int32)">
+            <summary>
+            Zwraca zamowienia wybranego uzytkownika.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.OrderController.GetOrdersByStatus(System.String)">
+            <summary>
+            Zwraca zamowienia o wskazanym statusie.
+            </summary>
+        </member>
+        <member name="T:Zwierzyniec.Controllers.ProductsController">
+            <summary>
+            Endpointy produktowe z danymi w pamieci.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.ProductsController.AddProduct(Zwierzyniec.Models.Input.ProductAdd)">
+            <summary>
+            Dodaje nowy produkt.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.ProductsController.EditProduct(Zwierzyniec.Models.Input.ProductEdit)">
+            <summary>
+            Aktualizuje produkt po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.ProductsController.DeleteProduct(System.Int32)">
+            <summary>
+            Usuwa produkt po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.ProductsController.FilterProducts(System.String[])">
+            <summary>
+            Filtruje produkty po tagach (nazwa, opis).
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.ProductsController.GetProductById(System.Int32)">
+            <summary>
+            Pobiera pojedynczy produkt po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.ProductsController.CountDown(System.Int32,System.Int32)">
+            <summary>
+            Zmniejsza stan magazynu i zwieksza sprzedaz.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.ProductsController.CountUp(System.Int32,System.Int32)">
+            <summary>
+            Zwieksza stan magazynu produktu.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.ProductsController.GetProducts">
+            <summary>
+            Zwraca liste wszystkich produktow.
+            </summary>
+        </member>
+        <member name="T:Zwierzyniec.Controllers.UserController">
+            <summary>
+            Endpointy uzytkownikow z danymi w pamieci.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.UserController.GetUserById(System.Int32)">
+            <summary>
+            Pobiera pojedynczego uzytkownika po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.UserController.CreateUser(Zwierzyniec.Models.Input.UserAdd)">
+            <summary>
+            Tworzy nowego uzytkownika.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.UserController.UpdateUser(Zwierzyniec.Models.Input.UserEdit)">
+            <summary>
+            Aktualizuje dane uzytkownika po Id.
+            </summary>
+        </member>
+        <member name="M:Zwierzyniec.Controllers.UserController.DeleteUser(System.Int32)">
+            <summary>
+            Usuwa uzytkownika po Id.
+            </summary>
+        </member>
+    </members>
+</doc>

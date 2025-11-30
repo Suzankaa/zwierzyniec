@@ -34,3 +34,6 @@ D:\repos\Zwierzyniec\Zwierzyniec\obj\Debug\net8.0\refint\Zwierzyniec.dll
 D:\repos\Zwierzyniec\Zwierzyniec\obj\Debug\net8.0\Zwierzyniec.pdb
 D:\repos\Zwierzyniec\Zwierzyniec\obj\Debug\net8.0\Zwierzyniec.genruntimeconfig.cache
 D:\repos\Zwierzyniec\Zwierzyniec\obj\Debug\net8.0\ref\Zwierzyniec.dll
+D:\repos\Zwierzyniec\Zwierzyniec\obj\Debug\net8.0\Zwierzyniec.sourcelink.json
+D:\repos\Zwierzyniec\Zwierzyniec\bin\Debug\net8.0\Zwierzyniec.xml
+D:\repos\Zwierzyniec\Zwierzyniec\obj\Debug\net8.0\Zwierzyniec.xml

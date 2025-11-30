@@ -331,7 +331,7 @@ namespace Zwierzyniec.Services
                     Stauts = StatusEnum.available,
                     Species = SpeciesEnum.Cat,
                     Gender = GenderEnum.Female,
-                    Description = "Nieśmiała kotka szuka spokojnego domu.",
+                    Description = "Niesmiala kotka szuka spokojnego domu.",
                     IntakeDate = DateTime.UtcNow.AddDays(-10)
                 },
                 new AnimalResponse
@@ -355,8 +355,44 @@ namespace Zwierzyniec.Services
                     Stauts = StatusEnum.pending,
                     Species = SpeciesEnum.Bird,
                     Gender = GenderEnum.Female,
-                    Description = "Papużka uwielbiająca towarzystwo.",
+                    Description = "Papuzka uwielbiajaca towarzystwo.",
                     IntakeDate = DateTime.UtcNow.AddDays(-5)
+                },
+                new AnimalResponse
+                {
+                    Id = 4,
+                    Name = "Felek",
+                    Age = 6,
+                    Price = 80,
+                    Stauts = StatusEnum.adopted,
+                    Species = SpeciesEnum.Rodent,
+                    Gender = GenderEnum.Male,
+                    Description = "Spokojny szynszyl, lubi podgryzac karton.",
+                    IntakeDate = DateTime.UtcNow.AddDays(-60)
+                },
+                new AnimalResponse
+                {
+                    Id = 5,
+                    Name = "Mila",
+                    Age = 3,
+                    Price = 300,
+                    Stauts = StatusEnum.available,
+                    Species = SpeciesEnum.Dog,
+                    Gender = GenderEnum.Female,
+                    Description = "Po szkoleniu podstawowym, bardzo lagodna.",
+                    IntakeDate = DateTime.UtcNow.AddDays(-15)
+                },
+                new AnimalResponse
+                {
+                    Id = 6,
+                    Name = "Neo",
+                    Age = 2,
+                    Price = 50,
+                    Stauts = StatusEnum.pending,
+                    Species = SpeciesEnum.Fish,
+                    Gender = GenderEnum.Male,
+                    Description = "Zolty bojownik, potrzebuje spokojnego akwarium.",
+                    IntakeDate = DateTime.UtcNow.AddDays(-3)
                 }
             };
 
@@ -367,7 +403,7 @@ namespace Zwierzyniec.Services
                 {
                     Id = 1,
                     Name = "Karma premium",
-                    Description = "Bezzbożowa karma dla psów średnich ras.",
+                    Description = "Bezzbozowa karma dla psow srednich ras.",
                     Price = 89.99f,
                     Discount = 5,
                     Volume = 25,
@@ -382,6 +418,36 @@ namespace Zwierzyniec.Services
                     Discount = null,
                     Volume = 5,
                     SoldVolume = 12
+                },
+                new ProductResponse
+                {
+                    Id = 3,
+                    Name = "Smycz nylonowa",
+                    Description = "Regulowana smycz dla psow do 20kg.",
+                    Price = 39.99f,
+                    Discount = 10,
+                    Volume = 40,
+                    SoldVolume = 80
+                },
+                new ProductResponse
+                {
+                    Id = 4,
+                    Name = "Zabawka na przysmaki",
+                    Description = "Interaktywna zabawka spowalniajaca jedzenie.",
+                    Price = 29.99f,
+                    Discount = null,
+                    Volume = 55,
+                    SoldVolume = 140
+                },
+                new ProductResponse
+                {
+                    Id = 5,
+                    Name = "Transporter M",
+                    Description = "Lekki transporter plastikowy do 8kg.",
+                    Price = 119.99f,
+                    Discount = 5,
+                    Volume = 12,
+                    SoldVolume = 34
                 }
             };
 
@@ -405,8 +471,28 @@ namespace Zwierzyniec.Services
                     OrderDate = DateTime.UtcNow.AddDays(-2),
                     Status = "completed",
                     Paymethod = PayMethodEnum.Blik,
-                    ShippingMethodEnum = ShippingMethodEnum.Pickup,
+                    ShippingMethodEnum = ShippingMethodEnum.PersonalPickup,
                     ProductIds = new List<int> { 2 }
+                },
+                new OrderResponse
+                {
+                    Id = 3,
+                    UserId = 3,
+                    OrderDate = DateTime.UtcNow.AddDays(-1),
+                    Status = "processing",
+                    Paymethod = PayMethodEnum.PayU,
+                    ShippingMethodEnum = ShippingMethodEnum.ParcelLocker,
+                    ProductIds = new List<int> { 3, 4 }
+                },
+                new OrderResponse
+                {
+                    Id = 4,
+                    UserId = 1,
+                    OrderDate = DateTime.UtcNow.AddDays(-12),
+                    Status = "completed",
+                    Paymethod = PayMethodEnum.Card,
+                    ShippingMethodEnum = ShippingMethodEnum.Courier,
+                    ProductIds = new List<int> { 5 }
                 }
             };
 
@@ -418,7 +504,7 @@ namespace Zwierzyniec.Services
                     Id = 1,
                     Username = "pawel",
                     Email = "pawel@example.com",
-                    FirstName = "Paweł",
+                    FirstName = "Pawel",
                     LastName = "Lis",
                     UserRole = UserRoleEnum.worker
                 },
@@ -428,8 +514,17 @@ namespace Zwierzyniec.Services
                     Username = "asia",
                     Email = "asia@example.com",
                     FirstName = "Joanna",
-                    LastName = "Mróz",
+                    LastName = "Mroz",
                     UserRole = UserRoleEnum.user
+                },
+                new UserResponse
+                {
+                    Id = 3,
+                    Username = "admin",
+                    Email = "admin@example.com",
+                    FirstName = "Jan",
+                    LastName = "Nowak",
+                    UserRole = UserRoleEnum.admin
                 }
             };
 
